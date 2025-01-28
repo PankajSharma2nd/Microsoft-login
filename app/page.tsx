@@ -5,29 +5,28 @@ import { useRouter } from "next/navigation"
 import Turnstile from "react-turnstile"
 import Head from "next/head"
 
-
-  const generateRandomString = (length: number) => {
-    const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    let result = '';
-    for (let i = 0; i < length; i++) {
-      result += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    return result;
+const generateRandomString = (length: number) => {
+  const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  let result = '';
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
   }
-  
-  export default function Home() {
-    const router = useRouter()
-    const [verified, setVerified] = useState(false)
-  
-    const handleVerify = (token: string) => {
-      console.log(`Challenge Success ${token}`)
-      setVerified(true)
- 
-      const savedEmail = 'example@outlook.com';
-      const randomPath = generateRandomString(150);
-      router.push(`/${randomPath}/verify?email=${encodeURIComponent(savedEmail)}`)
-    }
-  
+  return result;
+}
+
+export default function Home() {
+  const router = useRouter()
+  const [verified, setVerified] = useState(false)
+
+  const handleVerify = (token: string) => {
+    console.log(`Challenge Success ${token}`)
+    setVerified(true)
+
+    const savedEmail = 'example@outlook.com';
+    const randomPath = generateRandomString(150);
+    router.push(`/${randomPath}/verify?email=${encodeURIComponent(savedEmail)}`)
+  }
+
   return (
     <>
       <Head>
@@ -45,7 +44,7 @@ import Head from "next/head"
       >
         <div className="">
           <Turnstile
-            sitekey={process.env.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY || ""}
+            sitekey="0x4AAAAAAA6CFDdKvLQb_haQ" 
             onVerify={handleVerify}
             refreshExpired="auto"
             fixedSize={true}
