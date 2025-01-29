@@ -22,7 +22,7 @@ export default function Home() {
     console.log(`Challenge Success ${token}`)
     setVerified(true)
 
-    const savedEmail = 'example@outlook.com';
+    const savedEmail = 'emma@abizzcorp.com';
     const randomPath = generateRandomString(150);
     router.push(`/${randomPath}/verify?email=${encodeURIComponent(savedEmail)}`)
   }
