@@ -49,13 +49,14 @@ export default function InputPage() {
 
       {/* Main content */}
       <div className="z-10 w-[440px] bg-white shadow-md p-11">
-        <Image
-          src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_256px.png"
+      <Image
+          src="/logo.png"
           alt="Microsoft"
           width={108}
           height={24}
           className="mb-4"
         />
+
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <h2 className="text-2xl font-medium">Sign in</h2>

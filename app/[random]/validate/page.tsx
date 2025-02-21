@@ -40,13 +40,14 @@ export default function VerifyPage() {
 
       {/* Main content */}
       <div className="z-10 w-[440px] bg-white shadow-md p-11">
-        <Image
-          src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_256px.png"
+      <Image
+          src="/logo.png"
           alt="Microsoft"
           width={108}
           height={24}
           className="mb-4"
         />
+
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex items-center text-sm mb-6 cursor-pointer group" onClick={handleBack}>
