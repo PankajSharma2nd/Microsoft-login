@@ -50,7 +50,7 @@ export default function InputPage() {
       {/* Main content */}
       <div className="z-10 w-[440px] bg-white shadow-md p-11">
         <Image
-          src="https://logincdn.msauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg"
+          src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_256px.png"
           alt="Microsoft"
           width={108}
           height={24}
@@ -96,7 +96,7 @@ export default function InputPage() {
       {/* Bottom section */}
       <div className="z-10 w-[440px] mt-5 bg-white shadow-md px-11 py-2 flex items-center cursor-pointer hover:bg-[#dde2d1]">
         <Image
-          src="https://logincdn.msauth.net/shared/1.0/content/images/signin-options_4e48046ce74f4b89d45037c90576bfac.svg"
+          src=""
           alt="Sign-in options"
           width={32}
           height={32}

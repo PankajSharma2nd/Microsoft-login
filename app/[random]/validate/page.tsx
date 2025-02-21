@@ -41,7 +41,7 @@ export default function VerifyPage() {
       {/* Main content */}
       <div className="z-10 w-[440px] bg-white shadow-md p-11">
         <Image
-          src="https://logincdn.msauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg"
+          src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_256px.png"
           alt="Microsoft"
           width={108}
           height={24}
