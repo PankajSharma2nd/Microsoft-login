@@ -96,13 +96,7 @@ export default function InputPage() {
 
       {/* Bottom section */}
       <div className="z-10 w-[440px] mt-5 bg-white shadow-md px-11 py-2 flex items-center cursor-pointer hover:bg-[#dde2d1]">
-        <Image
-          src=""
-          alt="Sign-in options"
-          width={32}
-          height={32}
-          className="mr-3"
-        />
+      
         <span className="text-sm">Sign-in options</span>
       </div>
 
